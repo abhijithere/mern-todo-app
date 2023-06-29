@@ -1,0 +1,17 @@
+body{
+    background-color: rgba(0, 0, 0, 0.164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    border-bottom: 4px solid rgb(10, 158, 10);
+    border-style:solid;
+    color:rgb(10, 158, 10);
+}
+.vis{
+    display: flex;
+}
+.notvis{
+    display: none;
+}
