@@ -3,6 +3,7 @@ import { Link, Navigate } from 'react-router-dom'
 import { Context, server } from '../main'
 import axios from 'axios';
 import { toast } from 'react-hot-toast';
+import Navbar from './Navbar';
 
 function Login() {
 
@@ -40,14 +41,14 @@ function Login() {
 
   return (
    <>
-     <div className="login flex flex-col   justify-center items-center mt-28 max-[475px]:mt-40">
-      <section className='h-[500px] w-[450px]  max-[475px]:w-[400px] max-[425px]:w-[360px] max-[425px]:h-[470px] max-[380px]:w-[300px] gap-6 shadow-lg bg-white flex flex-col rounded-md  justify-center items-center'>
+     <div className="login flex flex-col   justify-center items-center mt-28">
+      <section className='h-[500px] w-[450px]  max-[475px]:w-[400px] max-[425px]:w-[360px] max-[425px]:h-[470px] max-[380px]:w-[330px] max-[350px]:w-[280px] gap-6 shadow-lg bg-white flex flex-col rounded-md  justify-center items-center'>
         <h1 className='text-4xl mb-8 text-green-600 font-bold max-[380px]:text-3xl'>Login</h1>
         <form  className='flex flex-col gap-2 justify-center items-center' onSubmit={submithandeller}>
           <input
             type="email"
             placeholder="Email"
-            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[200px]  p-5 text-xl rounded-sm   outline-green-200 border-[2px]  caret-green-500'
+            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[280px] max-[350px]:w-[230px]  p-5 text-xl rounded-sm   outline-green-200 border-[2px]  caret-green-500'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -56,11 +57,11 @@ function Login() {
             type="password"
             required
             placeholder="Password"
-            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[200px] p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
+            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[280px] max-[350px]:w-[230px] p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <div className='flex  gap-24 max-[425px]:gap-12 max-[380px]:gap-2 mt-5 justify-center items-center'>
+          <div className='flex  gap-24 max-[425px]:gap-12 max-[380px]:gap-10 max-[350px]:gap-2 mt-5 justify-center items-center'>
             <div className='flex justify-center items-center gap-2 max-[425px]:gap-1'>
               <input type='checkbox' className='h-4 w-4 max-[380px]:h-3 max-[380px]:w-3'/>
               <p className=' text-gray-500 max-[380px]:text-sm'>Remember me</p>

@@ -13,7 +13,7 @@ function Profile() {
     <>
     <Navbar/>
     <div className=' text-black mt-44 max-[370px]:mt-52 flex flex-col justify-center items-center'>
-    <img src='./public/man.png' className='h-72 max-[370px]:h-60'></img>
+    <img src='./img/man.png' className='h-72 max-[370px]:h-60'></img>
   
     <h1 className='text-5xl text-green-600 mt-5'>{user?.name}</h1>
     <p className='text-xl text-gray-500 mt-4'>{user?.email}</p>

@@ -44,7 +44,7 @@ console.log(icon)
                 <button disabled={loading} className='btn py-[22px] text white text-2xl' onClick={logouthandeller} >Logout</button>
             </ul>
         </div>
-        <img src='./public/menu.png' className='h-8 px-8 flex min-[600px]:hidden' onClick={()=>seticon(!icon)}></img>
+        <img src='./img/menu.png' className='h-8 px-8 flex min-[600px]:hidden' onClick={()=>seticon(!icon)}></img>
     </div>
   )
 }

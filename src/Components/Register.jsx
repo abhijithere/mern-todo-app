@@ -39,14 +39,14 @@ try {
 if(isAuthenticated) return <Navigate to={"/"}/>
 
   return (
-    <div className="login flex flex-col  justify-center items-center mt-28 max-[475px]:mt-40">
-      <section className='h-[500px] w-[450px] max-[475px]:w-[400px] max-[425px]:w-[360px] max-[425px]:h-[470px] max-[380px]:w-[300px] gap-2 shadow-lg bg-white flex flex-col rounded-md  justify-center items-center'>
+    <div className="login flex flex-col  justify-center items-center mt-28 ">
+      <section className='h-[500px] w-[450px] max-[475px]:w-[400px] max-[425px]:w-[360px] max-[425px]:h-[470px] max-[380px]:w-[330px] max-[350px]:w-[280px] gap-2 shadow-lg bg-white flex flex-col rounded-md  justify-center items-center'>
       <h1 className='text-4xl mb-8 text-green-600 font-bold mt-1 max-[380px]:text-3xl'>Signup</h1>
         <form  className='flex flex-col gap-5 justify-center items-center' onSubmit={submithandeller}> 
         <input
             type="text"
             placeholder="Name"
-            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[200px]  p-5 text-xl rounded-sm   outline-green-200 border-[2px]  caret-green-500'
+            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[280px] max-[350px]:w-[230px]  p-5 text-xl rounded-sm   outline-green-200 border-[2px]  caret-green-500'
             required
             value={name}
              onChange={(e) => setName(e.target.value)}
@@ -55,7 +55,7 @@ if(isAuthenticated) return <Navigate to={"/"}/>
           <input
             type="email"
             placeholder="Email"
-            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[200px]  p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
+            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[280px] max-[350px]:w-[230px] p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -64,7 +64,7 @@ if(isAuthenticated) return <Navigate to={"/"}/>
             type="password"
             required
             placeholder="Password"
-            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[200px]  p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
+            className='h-12 w-[350px] max-[425px]:w-[300px] max-[380px]:w-[280px] max-[350px]:w-[230px]  p-5 text-xl rounded-sm  outline-green-200 border-[2px] mt-2  caret-green-500'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
